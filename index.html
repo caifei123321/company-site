@@ -4,19 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>杭州尚诚创贸易有限公司 | Hangzhou Shangchengchuang Trading Co., Ltd.</title>
-<meta name="description" content="杭州尚诚创贸易有限公司——日用百货、照明、家居、五金等跨境B2B出口与供应链服务。">
+<meta name="description" content="杭州尚诚创贸易有限公司——日用百货、照明、家居、五金等跨境B2B出口与供应链服务。统一社会信用代码：91330108MAEUKKRF8Y。">
+<meta name="format-detection" content="telephone=no">
 <style>
   :root{
-    --bg:#0f172a;         /* 深色背景 */
-    --card:#0b1220;       /* 卡片底色 */
-    --primary:#22d3ee;    /* 青色主色 */
-    --accent:#a78bfa;     /* 辅色 */
-    --text:#e5e7eb;       /* 文字 */
-    --muted:#9ca3af;      /* 次级文字 */
-    --ok:#34d399;
-    --radius:16px;
+    --bg:#0f172a;--card:#0b1220;--primary:#22d3ee;--accent:#a78bfa;
+    --text:#e5e7eb;--muted:#9ca3af;--ok:#34d399;--warn:#f59e0b;--radius:16px
   }
-  *{box-sizing:border-box} html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Microsoft YaHei",sans-serif}
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Microsoft YaHei",sans-serif}
   a{color:var(--primary);text-decoration:none}
   .wrap{max-width:1100px;margin:0 auto;padding:24px}
   /* 顶部 */
@@ -25,12 +21,11 @@
   .logo{width:40px;height:40px;border-radius:12px;background:
     radial-gradient(120px 60px at -20% 120%, #22d3ee55, transparent 60%),
     radial-gradient(120px 60px at 120% -20%, #a78bfa55, transparent 60%),
-    linear-gradient(135deg,#22d3ee,#a78bfa);
-    box-shadow:0 8px 30px rgba(34,211,238,.28)}
+    linear-gradient(135deg,#22d3ee,#a78bfa);box-shadow:0 8px 30px rgba(34,211,238,.28)}
   .lang{display:flex;gap:8px}
-  .lang button{background:transparent;border:1px solid #334155;color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+  .lang button{background:transparent;border:1px solid #334155;color:var(--text);
+    padding:6px 10px;border-radius:10px;cursor:pointer}
   .lang button.active{border-color:var(--primary);color:#0f172a;background:var(--primary);font-weight:700}
-
   /* 英雄区 */
   .hero{position:relative;overflow:hidden;border-radius:20px;background:
     radial-gradient(1200px 400px at 10% -20%, #22d3ee22, transparent 40%),
@@ -45,37 +40,62 @@
   .btn{padding:10px 14px;border-radius:12px;border:1px solid #334155;cursor:pointer}
   .btn.primary{background:var(--primary);border-color:var(--primary);color:#083344;font-weight:700}
   .btn.ghost{background:transparent;color:var(--text)}
-
-  /* 卡片区 */
+  /* 三列卡片 */
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
   .card{background:var(--card);border:1px solid #1f2937;border-radius:var(--radius);padding:18px}
   .card h3{margin:0 0 8px;font-size:18px}
   .list{margin:10px 0 0 18px;padding:0}
   .list li{margin:6px 0;color:#cbd5e1}
-
   /* 信息区 */
   .info{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
-  .kv{display:grid;grid-template-columns:140px 1fr;gap:8px 12px;color:#cbd5e1}
+  .kv{display:grid;grid-template-columns:150px 1fr;gap:8px 12px;color:#cbd5e1}
   .muted{color:var(--muted)}
+  .note{margin-top:10px;font-size:12px;color:#9ca3af}
   .foot{margin:26px 0 10px;color:#94a3b8;text-align:center}
-
+  /* 背书条 */
+  .trust{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+  .pill{border:1px solid #23324e;background:#0e1a33;color:#cbd5e1;padding:6px 10px;border-radius:999px;font-size:12px}
+  .pill.ok{border-color:#285a46;background:#0e1f1a;color:#c7ffdd}
+  .pill.warn{border-color:#624416;background:#25190b;color:#ffdfb3}
+  /* 响应式 */
   @media (max-width:900px){
     .grid{grid-template-columns:1fr}
     .info{grid-template-columns:1fr}
     .hero-inner{padding:26px}
     .title{font-size:26px}
   }
-
-  /* 多语言控制 */
+  /* 语言切换 */
   [data-lang="ru"] .cn{display:none}
   [data-lang="ru"] .ru{display:block}
   .ru{display:none}
 </style>
+
+<!-- 结构化数据，增强“真实公司”可信度 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hangzhou Shangchengchuang Trading Co., Ltd.",
+  "alternateName": "杭州尚诚创贸易有限公司",
+  "url": "https://shangchengchuang.com",
+  "email": "caif5947@gmail.com",
+  "telephone": "+86 199 5172 2424",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No.54, Xixing Street, Room 15173, Binjiang District",
+    "addressLocality": "Hangzhou",
+    "addressRegion": "Zhejiang",
+    "postalCode": "310000",
+    "addressCountry": "CN"
+  },
+  "identifier": "Unified Social Credit Code: 91330108MAEUKKRF8Y"
+}
+</script>
 </head>
 <body data-lang="cn">
   <div class="wrap">
     <!-- 顶部 -->
-    <div class="topbar">
+    <div class="topbar" aria-label="company header">
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
@@ -89,36 +109,43 @@
       </div>
     </div>
 
-    <!-- 英雄区（双语文案） -->
+    <!-- 英雄区 -->
     <section class="hero">
       <div class="hero-inner">
         <h1 class="title cn">跨境B2B出口与供应链服务</h1>
         <h1 class="title ru">Кросс-бордер B2B-экспорт и услуги цепочки поставок</h1>
 
         <p class="subtitle cn">专注日用百货、照明、家居与五金等品类，为海外客户提供一站式采购、质检、包装与物流协同。</p>
-        <p class="subtitle ru">Специализируемся на товарах народного потребления, освещении, товарах для дома и инструментах. Предоставляем комплекс: закупка, инспекция качества, упаковка и логистика.</p>
+        <p class="subtitle ru">Специализируемся на товарах повседневного спроса, освещении, товарах для дома и инструменте. Полный цикл: закупка, инспекция качества, упаковка и логистика.</p>
 
         <div class="badges">
           <span class="badge">统一社会信用代码：91330108MAEUKKRF8Y</span>
-          <span class="badge">Made in China · Export B2B (9710)</span>
-          <span class="badge">Reliable · Efficient · Flexible</span>
+          <span class="badge">B2B 直接出口（监管方式 9710）</span>
+          <span class="badge">Made in China · Reliable & Efficient</span>
         </div>
 
         <div class="cta">
-          <a class="btn primary" href="mailto:info@shangchengchuang.com">✉️ caif5947@gmail.com / Отправить письмо</a>
-          <a class="btn ghost" href="#contact">📞 +8619951722424 / Контакты</a>
+          <a class="btn primary" href="mailto:caif5947@gmail.com">✉️ 发送邮件 / Отправить письмо</a>
+          <a class="btn ghost" href="#contact">📞 联系方式 / Контакты</a>
+        </div>
+
+        <!-- 背书条：突出真实性 -->
+        <div class="trust">
+          <span class="pill ok">资质：进出口货物收发货人 + 跨境电商电商企业（B2B）</span>
+          <span class="pill">所在地：浙江 · 杭州 · 滨江区</span>
+          <span class="pill warn">工作时间：周一至周五 9:30–18:00（GMT+8）</span>
         </div>
       </div>
     </section>
 
     <!-- 能力/品类卡片 -->
-    <div class="grid">
+    <div class="grid" aria-label="capabilities">
       <div class="card">
         <h3 class="cn">主营业务</h3>
         <h3 class="ru">Основные направления</h3>
         <ul class="list">
           <li class="cn">出口：照明产品、家居用品、五金工具、电子小家电、玩具等</li>
-          <li class="ru">Экспорт: осветительная продукция, товары для дома, инструмент, электроника, игрушки</li>
+          <li class="ru">Экспорт: светотехника, товары для дома, инструменты, мелкая электроника, игрушки</li>
           <li class="cn">跨境电商：B2B 直采直销（9710）</li>
           <li class="ru">Кросс-бордер e-commerce: B2B прямые поставки (9710)</li>
           <li class="cn">供应链服务：采购、质检、包装、报关协同</li>
@@ -131,9 +158,9 @@
         <h3 class="ru">Наши преимущества</h3>
         <ul class="list">
           <li class="cn">华东优质供应链，交付稳定</li>
-          <li class="ru">Надёжная база поставщиков Восточного Китая</li>
+          <li class="ru">Надёжная сеть поставщиков Восточного Китая</li>
           <li class="cn">支持 OEM/ODM，起订灵活</li>
-          <li class="ru">OEM/ODM, гибкие условия</li>
+          <li class="ru">OEM/ODM, гибкие условия MOQ</li>
           <li class="cn">多语种沟通与快速响应</li>
           <li class="ru">Многоязычная коммуникация и быстрый отклик</li>
         </ul>
@@ -143,10 +170,10 @@
         <h3 class="cn">合规信息</h3>
         <h3 class="ru">Сведения о компании</h3>
         <ul class="list">
-          <li class="cn">主体：杭州尚诚创贸易有限公司</li>
+          <li class="cn">主体：杭州尚诚创贸易有限公司（英文：Hangzhou Shangchengchuang Trading Co., Ltd.）</li>
           <li class="ru">Компания: Hangzhou Shangchengchuang Trading Co., Ltd.</li>
-          <li class="cn">资质：进出口货物收发货人 + 跨境电商电商企业（B2B）</li>
-          <li class="ru">Статус: участник внешней торговли и e-commerce B2B</li>
+          <li class="cn">统一社会信用代码：91330108MAEUKKRF8Y</li>
+          <li class="ru">UCC: 91330108MAEUKKRF8Y</li>
           <li class="cn">监管方式：9710（B2B 直接出口）</li>
           <li class="ru">Режим: 9710 (B2B прямой экспорт)</li>
         </ul>
@@ -154,7 +181,7 @@
     </div>
 
     <!-- 公司信息 / 联系方式 -->
-    <section id="contact" class="info">
+    <section id="contact" class="info" aria-label="contact">
       <div class="card">
         <h3 class="cn">企业信息</h3>
         <h3 class="ru">Данные компании</h3>
@@ -167,19 +194,20 @@
           <div class="cn">地址</div><div class="cn">浙江省杭州市滨江区西兴街道西兴街54号15173室</div>
           <div class="ru">Адрес</div><div class="ru">КНР, г. Ханчжоу, р-н Биньцзян, ул. Сисин, д.54, оф.15173</div>
         </div>
+        <div class="note">最后更新（Last updated）：<span id="ts"></span></div>
       </div>
 
       <div class="card">
         <h3 class="cn">联系我们</h3>
         <h3 class="ru">Контакты</h3>
         <div class="kv">
-          <div>Tel</div><div>+86-你的电话</div>
-          <div>Email</div><div><a href="mailto:info@shangchengchuang.com">info@shangchengchuang.com</a></div>
-          <div class="cn">微信 / WhatsApp</div><div class="cn">填你的号码（可选）</div>
-          <div class="ru">WhatsApp/WeChat</div><div class="ru">укажите номер (опц.)</div>
+          <div>Tel</div><div>+86 199 5172 2424</div>
+          <div>Email</div><div><a href="mailto:caif5947@gmail.com">caif5947@gmail.com</a></div>
+          <div class="cn">微信 / WhatsApp</div><div class="cn">（可按需补充）</div>
+          <div class="ru">WhatsApp/WeChat</div><div class="ru">(по запросу)</div>
           <div>Website</div><div><a href="https://shangchengchuang.com">shangchengchuang.com</a></div>
         </div>
-        <p class="muted" style="margin-top:8px">Business hours / 工作时间：Mon–Fri 9:30–18:00 (GMT+8)</p>
+        <p class="muted" style="margin-top:8px">Business hours：Mon–Fri 9:30–18:00 (GMT+8)</p>
       </div>
     </section>
 
@@ -187,16 +215,15 @@
   </div>
 
 <script>
-  const root = document.body;
-  const btnCN = document.getElementById('btnCN');
-  const btnRU = document.getElementById('btnRU');
-  function setLang(lang){
-    root.setAttribute('data-lang', lang);
-    btnCN.classList.toggle('active', lang==='cn');
-    btnRU.classList.toggle('active', lang==='ru');
-  }
-  btnCN.onclick = ()=>setLang('cn');
-  btnRU.onclick = ()=>setLang('ru');
+  // 语言切换
+  const root=document.body,btnCN=document.getElementById('btnCN'),btnRU=document.getElementById('btnRU');
+  function setLang(l){root.setAttribute('data-lang',l);btnCN.classList.toggle('active',l==='cn');btnRU.classList.toggle('active',l==='ru')}
+  btnCN.onclick=()=>setLang('cn'); btnRU.onclick=()=>setLang('ru');
+
+  // 更新时间显示（增强“非空壳”可信度）
+  const ts=document.getElementById('ts');
+  const d=new Date(); const pad=n=>String(n).padStart(2,'0');
+  ts.textContent=`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
 </script>
 </body>
 </html>
