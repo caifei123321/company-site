@@ -1,229 +1,237 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>杭州尚诚创贸易有限公司 | Hangzhou Shangchengchuang Trading Co., Ltd.</title>
-<meta name="description" content="杭州尚诚创贸易有限公司——日用百货、照明、家居、五金等跨境B2B出口与供应链服务。统一社会信用代码：91330108MAEUKKRF8Y。">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SVETLAB | Светильники из Китая для российского рынка</title>
+<meta name="description" content="SVETLAB и Jiaxing Chenyuan: готовые светильники, OEM/ODM и индивидуальное производство с поставкой из Китая в Россию.">
 <meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#07111f">
+<link rel="canonical" href="https://shangchengchuang.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="SVETLAB | Светильники из Китая">
+<meta property="og:description" content="Готовые модели, OEM/ODM и индивидуальное производство для российского рынка.">
+<meta property="og:url" content="https://shangchengchuang.com/">
+<meta property="og:image" content="https://shangchengchuang.com/og-svetlab.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SVETLAB | Светильники из Китая">
+<meta name="twitter:description" content="Поставки и производство светильников для российского рынка.">
+<meta name="twitter:image" content="https://shangchengchuang.com/og-svetlab.png">
 <style>
   :root{
-    --bg:#0f172a;--card:#0b1220;--primary:#22d3ee;--accent:#a78bfa;
-    --text:#e5e7eb;--muted:#9ca3af;--ok:#34d399;--warn:#f59e0b;--radius:16px
+    --bg:#07111f;--panel:#0b1728;--panel-2:#0e1d31;--line:#20344f;
+    --primary:#37d6e8;--accent:#8c7cf6;--text:#edf5fb;--muted:#9db0c3;
+    --ok:#48d69f;--warm:#f2b65f;--radius:18px
   }
-  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Microsoft YaHei",sans-serif}
-  a{color:var(--primary);text-decoration:none}
-  .wrap{max-width:1100px;margin:0 auto;padding:24px}
-  /* 顶部 */
-  .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:700}
-  .logo{width:40px;height:40px;border-radius:12px;background:
-    radial-gradient(120px 60px at -20% 120%, #22d3ee55, transparent 60%),
-    radial-gradient(120px 60px at 120% -20%, #a78bfa55, transparent 60%),
-    linear-gradient(135deg,#22d3ee,#a78bfa);box-shadow:0 8px 30px rgba(34,211,238,.28)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:
+    radial-gradient(900px 520px at 10% 0%,rgba(55,214,232,.09),transparent 58%),
+    radial-gradient(760px 520px at 100% 18%,rgba(140,124,246,.10),transparent 55%),
+    var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei",sans-serif}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:22px}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:8px 0 24px}
+  .brand{display:flex;align-items:center;gap:13px}
+  .logo{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:#06131e;font-size:22px;font-weight:900;
+    background:linear-gradient(135deg,var(--primary),#b9f8ff);box-shadow:0 12px 34px rgba(55,214,232,.24)}
+  .brand-name{font-size:19px;font-weight:800;letter-spacing:.08em}
+  .brand-sub{font-size:12px;color:var(--muted);margin-top:2px}
   .lang{display:flex;gap:8px}
-  .lang button{background:transparent;border:1px solid #334155;color:var(--text);
-    padding:6px 10px;border-radius:10px;cursor:pointer}
-  .lang button.active{border-color:var(--primary);color:#0f172a;background:var(--primary);font-weight:700}
-  /* 英雄区 */
-  .hero{position:relative;overflow:hidden;border-radius:20px;background:
-    radial-gradient(1200px 400px at 10% -20%, #22d3ee22, transparent 40%),
-    radial-gradient(1200px 400px at 110% 120%, #a78bfa22, transparent 40%),
-    linear-gradient(180deg,#0b1220,#0b1220);}
-  .hero-inner{padding:48px}
-  .title{font-size:34px;line-height:1.25;margin:0 0 8px}
-  .subtitle{color:var(--muted);margin:0 0 20px}
-  .badges{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 28px}
-  .badge{background:#0f1b31;border:1px solid #24324d;padding:6px 10px;border-radius:999px;color:#cbd5e1}
+  .lang button{background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 11px;border-radius:10px;cursor:pointer}
+  .lang button.active{border-color:var(--primary);background:var(--primary);color:#06131e;font-weight:800}
+  .hero{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(14,29,49,.98),rgba(7,17,31,.98))}
+  .hero:after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;right:-180px;top:-205px;
+    background:radial-gradient(circle,rgba(55,214,232,.20),rgba(140,124,246,.07) 46%,transparent 67%)}
+  .hero-inner{position:relative;z-index:1;padding:60px 58px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--primary);font-size:13px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+  .eyebrow:before{content:"";width:24px;height:2px;background:var(--primary)}
+  h1{max-width:830px;font-size:clamp(36px,6vw,64px);line-height:1.05;letter-spacing:-.035em;margin:20px 0 18px}
+  .subtitle{max-width:760px;color:#c2d0dd;font-size:18px;line-height:1.65;margin:0}
+  .badges{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 32px}
+  .badge{background:rgba(13,31,52,.86);border:1px solid #29405e;padding:7px 11px;border-radius:999px;color:#d1deea;font-size:13px}
   .cta{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{padding:10px 14px;border-radius:12px;border:1px solid #334155;cursor:pointer}
-  .btn.primary{background:var(--primary);border-color:var(--primary);color:#083344;font-weight:700}
-  .btn.ghost{background:transparent;color:var(--text)}
-  /* 三列卡片 */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
-  .card{background:var(--card);border:1px solid #1f2937;border-radius:var(--radius);padding:18px}
-  .card h3{margin:0 0 8px;font-size:18px}
-  .list{margin:10px 0 0 18px;padding:0}
-  .list li{margin:6px 0;color:#cbd5e1}
-  /* 信息区 */
-  .info{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
-  .kv{display:grid;grid-template-columns:150px 1fr;gap:8px 12px;color:#cbd5e1}
-  .muted{color:var(--muted)}
-  .note{margin-top:10px;font-size:12px;color:#9ca3af}
-  .foot{margin:26px 0 10px;color:#94a3b8;text-align:center}
-  /* 背书条 */
-  .trust{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
-  .pill{border:1px solid #23324e;background:#0e1a33;color:#cbd5e1;padding:6px 10px;border-radius:999px;font-size:12px}
-  .pill.ok{border-color:#285a46;background:#0e1f1a;color:#c7ffdd}
-  .pill.warn{border-color:#624416;background:#25190b;color:#ffdfb3}
-  /* 响应式 */
-  @media (max-width:900px){
-    .grid{grid-template-columns:1fr}
-    .info{grid-template-columns:1fr}
-    .hero-inner{padding:26px}
-    .title{font-size:26px}
-  }
-  /* 语言切换 */
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:12px;border:1px solid var(--line);font-weight:750}
+  .btn.primary{background:var(--primary);border-color:var(--primary);color:#06131e}
+  .btn.ghost{background:rgba(7,17,31,.42);color:var(--text)}
+  .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .pill{border:1px solid #29405e;background:#0d1b2e;color:#c7d4df;padding:6px 10px;border-radius:999px;font-size:12px}
+  .pill.ok{border-color:#255f4b;color:#c7ffe8;background:#0b261d}
+  .pill.warm{border-color:#5d4525;color:#ffe4ba;background:#2a1d0d}
+  .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}
+  .section-head h2{font-size:26px;margin:0}
+  .section-head p{margin:0;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .card{background:linear-gradient(180deg,var(--panel),rgba(10,24,41,.94));border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .card-number{color:var(--primary);font-size:12px;font-weight:800;letter-spacing:.12em;margin-bottom:12px}
+  .card h3{margin:0 0 10px;font-size:19px}
+  .list{margin:0;padding:0;list-style:none}
+  .list li{position:relative;padding-left:18px;margin:9px 0;color:#c5d2de;line-height:1.5}
+  .list li:before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--primary)}
+  .info{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:16px}
+  .kv{display:grid;grid-template-columns:158px 1fr;gap:11px 16px;color:#c8d5e0;line-height:1.45}
+  .kv .label{color:var(--muted)}
+  .contact-link{color:var(--primary);font-weight:700}
+  .note{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.55}
+  footer{margin:28px 0 8px;color:#7890a6;text-align:center;font-size:13px}
   [data-lang="ru"] .cn{display:none}
-  [data-lang="ru"] .ru{display:block}
-  .ru{display:none}
+  [data-lang="cn"] .ru{display:none}
+  @media (max-width:860px){
+    .grid,.info{grid-template-columns:1fr}.hero-inner{padding:38px 26px}.section-head{align-items:start;flex-direction:column}.kv{grid-template-columns:125px 1fr}
+  }
+  @media (max-width:520px){
+    .wrap{padding:14px}.topbar{align-items:flex-start}.brand-sub{max-width:190px}.hero-inner{padding:34px 22px}.subtitle{font-size:16px}.btn{width:100%}.kv{grid-template-columns:1fr;gap:4px}.kv .label{margin-top:10px}
+  }
 </style>
-
-<!-- 结构化数据，增强“真实公司”可信度 -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Hangzhou Shangchengchuang Trading Co., Ltd.",
-  "alternateName": "杭州尚诚创贸易有限公司",
-  "url": "https://shangchengchuang.com",
-  "email": "caif5947@gmail.com",
-  "telephone": "+86 199 5172 2424",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "No.54, Xixing Street, Room 15173, Binjiang District",
-    "addressLocality": "Hangzhou",
-    "addressRegion": "Zhejiang",
-    "postalCode": "310000",
-    "addressCountry": "CN"
-  },
-  "identifier": "Unified Social Credit Code: 91330108MAEUKKRF8Y"
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Jiaxing Chenyuan Import & Export Co., Ltd.",
+  "alternateName":"SVETLAB",
+  "url":"https://shangchengchuang.com/",
+  "email":"caif5947@gmail.com",
+  "telephone":"+86 199 5172 2424",
+  "contactPoint":{
+    "@type":"ContactPoint",
+    "contactType":"sales",
+    "name":"Cai Fei",
+    "email":"caif5947@gmail.com",
+    "telephone":"+86 199 5172 2424",
+    "availableLanguage":["Russian","Chinese"]
+  }
 }
 </script>
 </head>
-<body data-lang="cn">
+<body data-lang="ru">
   <div class="wrap">
-    <!-- 顶部 -->
-    <div class="topbar" aria-label="company header">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="SVETLAB">
+        <div class="logo" aria-hidden="true">S</div>
         <div>
-          <div style="font-size:16px">杭州尚诚创贸易有限公司</div>
-          <div class="muted" style="font-size:12px">Hangzhou Shangchengchuang Trading Co., Ltd.</div>
+          <div class="brand-name">SVETLAB</div>
+          <div class="brand-sub ru">Освещение для российского рынка</div>
+          <div class="brand-sub cn">面向俄罗斯市场的照明品牌</div>
         </div>
+      </a>
+      <div class="lang" role="group" aria-label="Language switch">
+        <button id="btnRU" class="active" type="button">RU</button>
+        <button id="btnCN" type="button">中文</button>
       </div>
-      <div class="lang" aria-label="Language switch">
-        <button id="btnCN" class="active">CN 中文</button>
-        <button id="btnRU">RU Русский</button>
-      </div>
-    </div>
+    </header>
 
-    <!-- 英雄区 -->
-    <section class="hero">
-      <div class="hero-inner">
-        <h1 class="title cn">跨境B2B出口与供应链服务</h1>
-        <h1 class="title ru">Кросс-бордер B2B-экспорт и услуги цепочки поставок</h1>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="eyebrow ru">Поставки из Китая</div>
+          <div class="eyebrow cn">中国照明供应</div>
+          <h1 class="ru">Светильники из Китая для российского рынка</h1>
+          <h1 class="cn">面向俄罗斯市场的中国灯具供应</h1>
+          <p class="subtitle ru">Готовые модели, OEM/ODM и индивидуальное производство. Подбор продукции, контроль заказа и координация поставки выполняются компанией Jiaxing Chenyuan.</p>
+          <p class="subtitle cn">提供现成款式、OEM/ODM及定制生产。由嘉兴晨源负责产品选型、订单跟进与出口交付协调。</p>
 
-        <p class="subtitle cn">专注日用百货、照明、家居与五金等品类，为海外客户提供一站式采购、质检、包装与物流协同。</p>
-        <p class="subtitle ru">Специализируемся на товарах повседневного спроса, освещении, товарах для дома и инструменте. Полный цикл: закупка, инспекция качества, упаковка и логистика.</p>
+          <div class="badges">
+            <span class="badge ru">Цены и расчёты в CNY</span><span class="badge cn">报价及结算使用人民币</span>
+            <span class="badge ru">Готовые модели и производство под заказ</span><span class="badge cn">现货款与定制生产</span>
+            <span class="badge ru">Логистика рассчитывается отдельно</span><span class="badge cn">物流费用单独核算</span>
+          </div>
 
-        <div class="badges">
-          <span class="badge">统一社会信用代码：91330108MAEUKKRF8Y</span>
-          <span class="badge">B2B 直接出口（监管方式 9710）</span>
-          <span class="badge">Made in China · Reliable & Efficient</span>
+          <div class="cta">
+            <a class="btn primary ru" href="mailto:caif5947@gmail.com?subject=Запрос%20по%20светильникам">Отправить запрос</a>
+            <a class="btn primary cn" href="mailto:caif5947@gmail.com?subject=灯具询价">发送询价</a>
+            <a class="btn ghost" href="https://t.me/svetlab_support" target="_blank" rel="noopener">Telegram: @svetlab_support</a>
+          </div>
+
+          <div class="trust">
+            <span class="pill ok ru">Прямой контакт с поставщиком</span><span class="pill ok cn">中国供应商直接对接</span>
+            <span class="pill ru">Каталог без цен — предложение по выбранным моделям</span><span class="pill cn">目录不标价，选款后单独报价</span>
+            <span class="pill warm ru">Перевозчик может быть выбран заказчиком</span><span class="pill warm cn">客户可自行选择物流公司</span>
+          </div>
         </div>
+      </section>
 
-        <div class="cta">
-          <a class="btn primary" href="mailto:caif5947@gmail.com">✉️ 发送邮件 / Отправить письмо</a>
-          <a class="btn ghost" href="#contact">📞 联系方式 / Контакты</a>
-        </div>
-
-        <!-- 背书条：突出真实性 -->
-        <div class="trust">
-          <span class="pill ok">资质：进出口货物收发货人 + 跨境电商电商企业（B2B）</span>
-          <span class="pill">所在地：浙江 · 杭州 · 滨江区</span>
-          <span class="pill warn">工作时间：周一至周五 9:30–18:00（GMT+8）</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 能力/品类卡片 -->
-    <div class="grid" aria-label="capabilities">
-      <div class="card">
-        <h3 class="cn">主营业务</h3>
-        <h3 class="ru">Основные направления</h3>
-        <ul class="list">
-          <li class="cn">出口：照明产品、家居用品、五金工具、电子小家电、玩具等</li>
-          <li class="ru">Экспорт: светотехника, товары для дома, инструменты, мелкая электроника, игрушки</li>
-          <li class="cn">跨境电商：B2B 直采直销（9710）</li>
-          <li class="ru">Кросс-бордер e-commerce: B2B прямые поставки (9710)</li>
-          <li class="cn">供应链服务：采购、质检、包装、报关协同</li>
-          <li class="ru">Снабжение: закупка, инспекция качества, упаковка, координация таможенного оформления</li>
-        </ul>
+      <div class="section-head">
+        <h2 class="ru">Что мы предлагаем</h2><h2 class="cn">我们提供什么</h2>
+        <p class="ru">От выбора модели до отгрузки</p><p class="cn">从选款到出货</p>
       </div>
 
-      <div class="card">
-        <h3 class="cn">合作优势</h3>
-        <h3 class="ru">Наши преимущества</h3>
-        <ul class="list">
-          <li class="cn">华东优质供应链，交付稳定</li>
-          <li class="ru">Надёжная сеть поставщиков Восточного Китая</li>
-          <li class="cn">支持 OEM/ODM，起订灵活</li>
-          <li class="ru">OEM/ODM, гибкие условия MOQ</li>
-          <li class="cn">多语种沟通与快速响应</li>
-          <li class="ru">Многоязычная коммуникация и быстрый отклик</li>
-        </ul>
+      <section class="grid" aria-label="Services">
+        <article class="card">
+          <div class="card-number">01 / PRODUCTS</div>
+          <h3 class="ru">Ассортимент светильников</h3><h3 class="cn">灯具产品范围</h3>
+          <ul class="list">
+            <li class="ru">Потолочные и подвесные светильники</li><li class="cn">吸顶灯与吊灯</li>
+            <li class="ru">Люстры, бра, настольные и напольные модели</li><li class="cn">水晶灯、壁灯、台灯与落地灯</li>
+            <li class="ru">Вентиляторы-светильники, линейные и проектные решения</li><li class="cn">风扇灯、线性灯与工程照明</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-number">02 / CUSTOM</div>
+          <h3 class="ru">OEM, ODM и кастомизация</h3><h3 class="cn">OEM、ODM与定制</h3>
+          <ul class="list">
+            <li class="ru">Размер, цвет, источник света и упаковка</li><li class="cn">尺寸、颜色、光源与包装定制</li>
+            <li class="ru">Производство по образцу или техническому заданию</li><li class="cn">支持来样或按需求生产</li>
+            <li class="ru">Согласование спецификации перед запуском</li><li class="cn">投产前确认规格明细</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-number">03 / DELIVERY</div>
+          <h3 class="ru">Заказ и логистика</h3><h3 class="cn">订单与物流</h3>
+          <ul class="list">
+            <li class="ru">Предложение и расчёты в китайских юанях</li><li class="cn">使用人民币报价和结算</li>
+            <li class="ru">Срок производства подтверждается по спецификации</li><li class="cn">生产周期按确认规格执行</li>
+            <li class="ru">Доставка оплачивается по фактическому тарифу перевозчика</li><li class="cn">物流按承运商实际报价核算</li>
+          </ul>
+        </article>
+      </section>
+
+      <div class="section-head">
+        <h2 class="ru">Компания и контакты</h2><h2 class="cn">公司与联系方式</h2>
+        <p class="ru">Ответим и подготовим предложение</p><p class="cn">快速响应并准备报价</p>
       </div>
 
-      <div class="card">
-        <h3 class="cn">合规信息</h3>
-        <h3 class="ru">Сведения о компании</h3>
-        <ul class="list">
-          <li class="cn">主体：杭州尚诚创贸易有限公司（英文：Hangzhou Shangchengchuang Trading Co., Ltd.）</li>
-          <li class="ru">Компания: Hangzhou Shangchengchuang Trading Co., Ltd.</li>
-          <li class="cn">统一社会信用代码：91330108MAEUKKRF8Y</li>
-          <li class="ru">UCC: 91330108MAEUKKRF8Y</li>
-          <li class="cn">监管方式：9710（B2B 直接出口）</li>
-          <li class="ru">Режим: 9710 (B2B прямой экспорт)</li>
-        </ul>
-      </div>
-    </div>
+      <section id="contact" class="info" aria-label="Contacts">
+        <article class="card">
+          <h3 class="ru">О компании</h3><h3 class="cn">公司信息</h3>
+          <div class="kv">
+            <div class="label ru">Бренд</div><div class="label cn">品牌</div><div>SVETLAB</div>
+            <div class="label ru">Поставки и экспорт</div><div class="label cn">供应与出口</div><div>Jiaxing Chenyuan Import &amp; Export Co., Ltd.</div>
+            <div class="label ru">Контактное лицо</div><div class="label cn">联系人</div><div>Cai Fei</div>
+            <div class="label ru">Рынок</div><div class="label cn">目标市场</div><div class="ru">Россия и страны СНГ</div><div class="cn">俄罗斯及独联体市场</div>
+          </div>
+          <p class="note ru">SVETLAB — бренд освещения для российского рынка. Jiaxing Chenyuan отвечает за подбор продукции, производство, экспорт и сопровождение заказа. Юридические и платёжные реквизиты предоставляются в договоре и счёте.</p>
+          <p class="note cn">SVETLAB为面向俄罗斯市场的照明品牌，嘉兴晨源负责产品选型、生产、出口与订单执行。合同及付款主体以正式合同和账单为准。</p>
+        </article>
+        <article class="card">
+          <h3 class="ru">Связаться с нами</h3><h3 class="cn">联系我们</h3>
+          <div class="kv">
+            <div class="label">E-mail</div><div><a class="contact-link" href="mailto:caif5947@gmail.com">caif5947@gmail.com</a></div>
+            <div class="label">Telegram</div><div><a class="contact-link" href="https://t.me/svetlab_support" target="_blank" rel="noopener">@svetlab_support</a></div>
+            <div class="label">WhatsApp</div><div><a class="contact-link" href="https://wa.me/8619951722424" target="_blank" rel="noopener">+86 199 5172 2424</a></div>
+            <div class="label">MAX</div><div>+7 924 348-91-00</div>
+            <div class="label ru">Время работы</div><div class="label cn">工作时间</div><div>Пн–Пт / 周一至周五, 9:30–18:00 (GMT+8)</div>
+          </div>
+        </article>
+      </section>
+    </main>
 
-    <!-- 公司信息 / 联系方式 -->
-    <section id="contact" class="info" aria-label="contact">
-      <div class="card">
-        <h3 class="cn">企业信息</h3>
-        <h3 class="ru">Данные компании</h3>
-        <div class="kv">
-          <div class="cn">公司全称</div><div class="cn">杭州尚诚创贸易有限公司</div>
-          <div class="ru">Полное наименование</div><div class="ru">Hangzhou Shangchengchuang Trading Co., Ltd.</div>
-
-          <div>统一社会信用代码 / UCC</div><div>91330108MAEUKKRF8Y</div>
-
-          <div class="cn">地址</div><div class="cn">浙江省杭州市滨江区西兴街道西兴街54号15173室</div>
-          <div class="ru">Адрес</div><div class="ru">КНР, г. Ханчжоу, р-н Биньцзян, ул. Сисин, д.54, оф.15173</div>
-        </div>
-        <div class="note">最后更新（Last updated）：<span id="ts"></span></div>
-      </div>
-
-      <div class="card">
-        <h3 class="cn">联系我们</h3>
-        <h3 class="ru">Контакты</h3>
-        <div class="kv">
-          <div>Tel</div><div>+86 199 5172 2424</div>
-          <div>Email</div><div><a href="mailto:caif5947@gmail.com">caif5947@gmail.com</a></div>
-          <div class="cn">微信 / WhatsApp</div><div class="cn">（可按需补充）</div>
-          <div class="ru">WhatsApp/WeChat</div><div class="ru">(по запросу)</div>
-          <div>Website</div><div><a href="https://shangchengchuang.com">shangchengchuang.com</a></div>
-        </div>
-        <p class="muted" style="margin-top:8px">Business hours：Mon–Fri 9:30–18:00 (GMT+8)</p>
-      </div>
-    </section>
-
-    <div class="foot">© Hangzhou Shangchengchuang Trading Co., Ltd.</div>
+    <footer>© <span id="year"></span> SVETLAB · Jiaxing Chenyuan Import &amp; Export Co., Ltd.</footer>
   </div>
 
 <script>
-  // 语言切换
-  const root=document.body,btnCN=document.getElementById('btnCN'),btnRU=document.getElementById('btnRU');
-  function setLang(l){root.setAttribute('data-lang',l);btnCN.classList.toggle('active',l==='cn');btnRU.classList.toggle('active',l==='ru')}
-  btnCN.onclick=()=>setLang('cn'); btnRU.onclick=()=>setLang('ru');
-
-  // 更新时间显示（增强“非空壳”可信度）
-  const ts=document.getElementById('ts');
-  const d=new Date(); const pad=n=>String(n).padStart(2,'0');
-  ts.textContent=`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  const root=document.body;
+  const btnCN=document.getElementById('btnCN');
+  const btnRU=document.getElementById('btnRU');
+  function setLang(lang){
+    root.setAttribute('data-lang',lang);
+    document.documentElement.lang=lang==='ru'?'ru':'zh-CN';
+    btnRU.classList.toggle('active',lang==='ru');
+    btnCN.classList.toggle('active',lang==='cn');
+  }
+  btnRU.addEventListener('click',()=>setLang('ru'));
+  btnCN.addEventListener('click',()=>setLang('cn'));
+  document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
