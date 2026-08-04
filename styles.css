@@ -136,15 +136,11 @@ h2 {
   display: flex;
   min-height: 36px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contact-rail-label {
-  color: var(--muted-dark);
-  font-size: 0.63rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  display: none;
 }
 
 .contact-shortcuts {
@@ -155,21 +151,33 @@ h2 {
 .contact-shortcut {
   position: relative;
   display: inline-flex;
+  width: 48px;
+  height: 36px;
   align-items: center;
-  gap: 9px;
-  padding: 0 15px;
+  justify-content: center;
+  padding: 0;
   border-left: 1px solid rgba(255, 255, 255, 0.08);
   transition: color 180ms ease, background 180ms ease;
 }
 
-.contact-shortcut::before {
-  width: 5px;
-  height: 5px;
-  flex: 0 0 auto;
-  background: var(--gold);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(215, 180, 93, 0.1);
-  content: "";
+.contact-shortcut::after {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 7px);
+  left: 50%;
+  padding: 5px 8px;
+  color: var(--ink);
+  background: var(--white);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  content: attr(data-channel);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -3px);
+  transition: opacity 160ms ease, transform 160ms ease;
+  white-space: nowrap;
 }
 
 .contact-shortcut:last-child {
@@ -182,18 +190,41 @@ h2 {
   background: rgba(255, 255, 255, 0.055);
 }
 
-.contact-channel {
-  color: var(--white);
-  font-size: 0.64rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.contact-shortcut:hover::after,
+.contact-shortcut:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
+.contact-shortcut-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--gold);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.45;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.contact-shortcut:hover .contact-shortcut-icon,
+.contact-shortcut:focus-visible .contact-shortcut-icon {
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.contact-channel,
 .contact-address {
-  color: var(--muted-dark);
-  font-size: 0.65rem;
-  letter-spacing: 0.015em;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .header-inner {
@@ -1399,10 +1430,6 @@ h2 {
 }
 
 @media (max-width: 1080px) {
-  .contact-address {
-    display: none;
-  }
-
   .desktop-nav {
     display: none;
   }
@@ -1601,13 +1628,11 @@ h2 {
   }
 
   .contact-shortcuts {
-    width: 100%;
+    width: auto;
   }
 
   .contact-shortcut {
-    flex: 1 1 0;
-    justify-content: center;
-    padding: 0 6px;
+    flex: 0 0 48px;
   }
 
   .contact-shortcut:first-child {
