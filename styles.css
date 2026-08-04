@@ -127,6 +127,75 @@ h2 {
   backdrop-filter: blur(20px);
 }
 
+.contact-rail {
+  background: rgba(3, 13, 15, 0.84);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-rail-inner {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-rail-label {
+  color: var(--muted-dark);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-shortcuts {
+  display: flex;
+  align-self: stretch;
+}
+
+.contact-shortcut {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  transition: color 180ms ease, background 180ms ease;
+}
+
+.contact-shortcut::before {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 auto;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(215, 180, 93, 0.1);
+  content: "";
+}
+
+.contact-shortcut:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-shortcut:hover,
+.contact-shortcut:focus-visible {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.contact-channel {
+  color: var(--white);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-address {
+  color: var(--muted-dark);
+  font-size: 0.65rem;
+  letter-spacing: 0.015em;
+}
+
 .header-inner {
   display: flex;
   min-height: 78px;
@@ -316,7 +385,7 @@ h2 {
   top: 100%;
   right: 0;
   left: 0;
-  height: calc(100dvh - 78px);
+  height: calc(100dvh - 114px);
   overflow-y: auto;
   color: var(--white);
   background: var(--ink);
@@ -1330,6 +1399,10 @@ h2 {
 }
 
 @media (max-width: 1080px) {
+  .contact-address {
+    display: none;
+  }
+
   .desktop-nav {
     display: none;
   }
@@ -1519,6 +1592,32 @@ h2 {
     width: min(calc(100% - 28px), var(--shell));
   }
 
+  .contact-rail-inner {
+    min-height: 34px;
+  }
+
+  .contact-rail-label {
+    display: none;
+  }
+
+  .contact-shortcuts {
+    width: 100%;
+  }
+
+  .contact-shortcut {
+    flex: 1 1 0;
+    justify-content: center;
+    padding: 0 6px;
+  }
+
+  .contact-shortcut:first-child {
+    border-left: 0;
+  }
+
+  .contact-shortcut:last-child {
+    border-right: 0;
+  }
+
   .header-inner {
     min-height: 70px;
     gap: 12px;
@@ -1549,7 +1648,7 @@ h2 {
   }
 
   .mobile-menu {
-    height: calc(100dvh - 70px);
+    height: calc(100dvh - 104px);
   }
 
   .lang-switch {
