@@ -20,6 +20,5 @@ Then open `http://localhost:8080`.
 
 ## Deployment
 
-The repository is compatible with GitHub Pages and keeps the existing `CNAME`
-for `shangchengchuang.com`. Publishing is intentionally not performed as part
-of the redesign task.
+The site is published through GitHub Pages and keeps the existing `CNAME` for
+`shangchengchuang.com`.
