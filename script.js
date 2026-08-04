@@ -19,7 +19,7 @@ const translations = {
     heroLead: "We source ready-made products, manufacture custom fixtures and consolidate orders for delivery to Russia. One point of contact in China throughout.",
     heroPrimary: "Send your project for a quote",
     heroSecondary: "Request the catalog",
-    heroNote: "For wholesalers, design studios, contractors and project procurement teams.",
+    heroNote: "A photo or link, quantity and destination city are enough for the first quotation.",
     heroImageAlt: "Crystal chandelier in a modern interior",
     heroImageCaption: "Ready-made products and custom manufacturing",
     audienceLabel: "Who we work with",
@@ -41,6 +41,9 @@ const translations = {
     productsEyebrow: "Product range",
     productsTitle: "From decorative pieces to complete technical systems.",
     productsLead: "Share the style or parameters you need—we will propose options from current catalogs and custom-production routes.",
+    productCtaEyebrow: "Did not find the right model?",
+    productCtaText: "Send a photo, link or project excerpt—we will propose catalog options and a custom-production route.",
+    productCtaButton: "Send a photo or link",
     product1Alt: "Ring crystal chandelier",
     product1Title: "Chandeliers & pendant lighting",
     product1Meta: "Catalog products · custom sizes",
@@ -110,13 +113,15 @@ const translations = {
     process5Text: "Packaging, consolidation and handover to the carrier.",
     brandEyebrow: "Who stands behind the supply",
     brandTitle: "Three roles. One clear chain of responsibility.",
-    brandLead: "We explain the relationship between the market brand, operations team and Chinese trading entity without mixing identities.",
+    brandLead: "SVETLAB handles market communication, Jiaxing Chenyuan executes the supply, and the Chinese trading entity issues the contract and payment details.",
     brand1Text: "Lighting brand and commercial operations for the Russian market.",
     brand2Text: "Product sourcing, factory coordination, quality control, consolidation and export support.",
     brand3Text: "Chinese trading entity and domain owner. Legal and payment details are confirmed in the contract and invoice.",
     contactEyebrow: "Start an inquiry",
     contactTitle: "Send a project, photo or link. We will reply with a concrete next step.",
     contactLead: "For a faster selection and quote, include the product type, quantity, destination city and target timing.",
+    contactTelegramCta: "Send an inquiry in Telegram",
+    contactWhatsAppCta: "Message us on WhatsApp",
     contactEmailCta: "Send an e-mail",
     contactCardAria: "Contact details",
     hoursLabel: "Business hours",
@@ -180,7 +185,7 @@ function setLanguage(lang) {
     }
   });
 
-  document.querySelectorAll(".dynamic-mail").forEach((link) => {
+  document.querySelectorAll(".dynamic-link").forEach((link) => {
     link.href = isEnglish ? link.dataset.hrefEn : link.dataset.hrefRu;
   });
 
@@ -219,16 +224,22 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") setMenu(false);
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: "0px 0px -24px" });
+const revealElements = document.querySelectorAll(".reveal");
 
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -24px" });
+
+  revealElements.forEach((element) => observer.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+}
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const savedLanguage = localStorage.getItem("svetlab-language");

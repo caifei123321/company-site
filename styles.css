@@ -422,7 +422,7 @@ h2 {
   gap: 28px;
   padding: 13px 20px;
   border: 1px solid transparent;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
@@ -708,6 +708,45 @@ h2 {
   margin-top: 10px;
   color: #ccd4d1;
   font-size: 0.76rem;
+}
+
+.product-cta {
+  display: grid;
+  margin-top: 18px;
+  padding: 30px 34px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 48px;
+  color: var(--white);
+  background: var(--ink);
+}
+
+.product-cta p {
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.product-cta h3 {
+  max-width: 800px;
+  margin-top: 10px;
+  font-size: clamp(1.35rem, 2.1vw, 2rem);
+  line-height: 1.15;
+}
+
+.button-dark {
+  color: var(--ink);
+  background: var(--white);
+  border-color: var(--white);
+  white-space: nowrap;
+}
+
+.button-dark:hover,
+.button-dark:focus-visible {
+  color: var(--white);
+  background: transparent;
 }
 
 .custom {
@@ -1420,6 +1459,15 @@ h2 {
     grid-template-rows: none;
   }
 
+  .product-cta {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .product-cta .button {
+    justify-self: start;
+  }
+
   .product-card {
     min-height: 500px;
   }
@@ -1509,12 +1557,12 @@ h2 {
   }
 
   .hero-copy {
-    padding: 54px 0 52px;
+    padding: 46px 0 48px;
   }
 
   .hero h1 {
     margin-top: 22px;
-    font-size: clamp(2.85rem, 14vw, 4rem);
+    font-size: clamp(2.6rem, 12.2vw, 3.35rem);
   }
 
   .hero-lead {
@@ -1592,6 +1640,15 @@ h2 {
 
   .product-grid {
     margin-top: 44px;
+  }
+
+  .product-cta {
+    margin-top: 14px;
+    padding: 24px 20px;
+  }
+
+  .product-cta .button {
+    width: 100%;
   }
 
   .product-card {
