@@ -1,237 +1,405 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SVETLAB | Светильники из Китая для российского рынка</title>
-<meta name="description" content="SVETLAB и Jiaxing Chenyuan: готовые светильники, OEM/ODM и индивидуальное производство с поставкой из Китая в Россию.">
-<meta name="format-detection" content="telephone=no">
-<meta name="theme-color" content="#07111f">
-<link rel="canonical" href="https://shangchengchuang.com/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ru_RU">
-<meta property="og:title" content="SVETLAB | Светильники из Китая">
-<meta property="og:description" content="Готовые модели, OEM/ODM и индивидуальное производство для российского рынка.">
-<meta property="og:url" content="https://shangchengchuang.com/">
-<meta property="og:image" content="https://shangchengchuang.com/og-svetlab.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SVETLAB | Светильники из Китая">
-<meta name="twitter:description" content="Поставки и производство светильников для российского рынка.">
-<meta name="twitter:image" content="https://shangchengchuang.com/og-svetlab.png">
-<style>
-  :root{
-    --bg:#07111f;--panel:#0b1728;--panel-2:#0e1d31;--line:#20344f;
-    --primary:#37d6e8;--accent:#8c7cf6;--text:#edf5fb;--muted:#9db0c3;
-    --ok:#48d69f;--warm:#f2b65f;--radius:18px
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVETLAB — поставки светильников из Китая для России</title>
+  <meta name="description" content="Готовые светильники, OEM/ODM и проектное производство в Китае. Подбор, контроль, консолидация и поставка для российских оптовиков, дизайнеров и подрядчиков.">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#071416">
+  <link rel="canonical" href="https://shangchengchuang.com/">
+  <link rel="icon" href="favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="SVETLAB — светильники из Китая для российского рынка">
+  <meta property="og:description" content="Готовые модели, проектная комплектация и производство под заказ с контролем в Китае.">
+  <meta property="og:url" content="https://shangchengchuang.com/">
+  <meta property="og:image" content="https://shangchengchuang.com/og-svetlab.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SVETLAB — светильники из Китая для российского рынка">
+  <meta name="twitter:description" content="Подбор, производство, контроль и поставка для B2B-клиентов в России.">
+  <meta name="twitter:image" content="https://shangchengchuang.com/og-svetlab.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hangzhou Shangchengchuang Trading Co., Ltd.",
+    "alternateName": ["SVETLAB", "Jiaxing Chenyuan"],
+    "url": "https://shangchengchuang.com/",
+    "email": "caif5947@gmail.com",
+    "telephone": "+86 199 5172 2424",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "name": "Cai Fei",
+      "email": "caif5947@gmail.com",
+      "telephone": "+86 199 5172 2424",
+      "availableLanguage": ["Russian", "English", "Chinese"]
+    }
   }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:
-    radial-gradient(900px 520px at 10% 0%,rgba(55,214,232,.09),transparent 58%),
-    radial-gradient(760px 520px at 100% 18%,rgba(140,124,246,.10),transparent 55%),
-    var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei",sans-serif}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:1120px;margin:0 auto;padding:22px}
-  .topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:8px 0 24px}
-  .brand{display:flex;align-items:center;gap:13px}
-  .logo{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:#06131e;font-size:22px;font-weight:900;
-    background:linear-gradient(135deg,var(--primary),#b9f8ff);box-shadow:0 12px 34px rgba(55,214,232,.24)}
-  .brand-name{font-size:19px;font-weight:800;letter-spacing:.08em}
-  .brand-sub{font-size:12px;color:var(--muted);margin-top:2px}
-  .lang{display:flex;gap:8px}
-  .lang button{background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 11px;border-radius:10px;cursor:pointer}
-  .lang button.active{border-color:var(--primary);background:var(--primary);color:#06131e;font-weight:800}
-  .hero{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(14,29,49,.98),rgba(7,17,31,.98))}
-  .hero:after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;right:-180px;top:-205px;
-    background:radial-gradient(circle,rgba(55,214,232,.20),rgba(140,124,246,.07) 46%,transparent 67%)}
-  .hero-inner{position:relative;z-index:1;padding:60px 58px}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--primary);font-size:13px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
-  .eyebrow:before{content:"";width:24px;height:2px;background:var(--primary)}
-  h1{max-width:830px;font-size:clamp(36px,6vw,64px);line-height:1.05;letter-spacing:-.035em;margin:20px 0 18px}
-  .subtitle{max-width:760px;color:#c2d0dd;font-size:18px;line-height:1.65;margin:0}
-  .badges{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 32px}
-  .badge{background:rgba(13,31,52,.86);border:1px solid #29405e;padding:7px 11px;border-radius:999px;color:#d1deea;font-size:13px}
-  .cta{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:12px;border:1px solid var(--line);font-weight:750}
-  .btn.primary{background:var(--primary);border-color:var(--primary);color:#06131e}
-  .btn.ghost{background:rgba(7,17,31,.42);color:var(--text)}
-  .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-  .pill{border:1px solid #29405e;background:#0d1b2e;color:#c7d4df;padding:6px 10px;border-radius:999px;font-size:12px}
-  .pill.ok{border-color:#255f4b;color:#c7ffe8;background:#0b261d}
-  .pill.warm{border-color:#5d4525;color:#ffe4ba;background:#2a1d0d}
-  .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}
-  .section-head h2{font-size:26px;margin:0}
-  .section-head p{margin:0;color:var(--muted)}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .card{background:linear-gradient(180deg,var(--panel),rgba(10,24,41,.94));border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-  .card-number{color:var(--primary);font-size:12px;font-weight:800;letter-spacing:.12em;margin-bottom:12px}
-  .card h3{margin:0 0 10px;font-size:19px}
-  .list{margin:0;padding:0;list-style:none}
-  .list li{position:relative;padding-left:18px;margin:9px 0;color:#c5d2de;line-height:1.5}
-  .list li:before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--primary)}
-  .info{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:16px}
-  .kv{display:grid;grid-template-columns:158px 1fr;gap:11px 16px;color:#c8d5e0;line-height:1.45}
-  .kv .label{color:var(--muted)}
-  .contact-link{color:var(--primary);font-weight:700}
-  .note{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.55}
-  footer{margin:28px 0 8px;color:#7890a6;text-align:center;font-size:13px}
-  [data-lang="ru"] .cn{display:none}
-  [data-lang="cn"] .ru{display:none}
-  @media (max-width:860px){
-    .grid,.info{grid-template-columns:1fr}.hero-inner{padding:38px 26px}.section-head{align-items:start;flex-direction:column}.kv{grid-template-columns:125px 1fr}
-  }
-  @media (max-width:520px){
-    .wrap{padding:14px}.topbar{align-items:flex-start}.brand-sub{max-width:190px}.hero-inner{padding:34px 22px}.subtitle{font-size:16px}.btn{width:100%}.kv{grid-template-columns:1fr;gap:4px}.kv .label{margin-top:10px}
-  }
-</style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Jiaxing Chenyuan Import & Export Co., Ltd.",
-  "alternateName":"SVETLAB",
-  "url":"https://shangchengchuang.com/",
-  "email":"caif5947@gmail.com",
-  "telephone":"+86 199 5172 2424",
-  "contactPoint":{
-    "@type":"ContactPoint",
-    "contactType":"sales",
-    "name":"Cai Fei",
-    "email":"caif5947@gmail.com",
-    "telephone":"+86 199 5172 2424",
-    "availableLanguage":["Russian","Chinese"]
-  }
-}
-</script>
+  </script>
 </head>
-<body data-lang="ru">
-  <div class="wrap">
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="SVETLAB">
-        <div class="logo" aria-hidden="true">S</div>
-        <div>
-          <div class="brand-name">SVETLAB</div>
-          <div class="brand-sub ru">Освещение для российского рынка</div>
-          <div class="brand-sub cn">面向俄罗斯市场的照明品牌</div>
-        </div>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="SVETLAB — главная" data-i18n-aria="brandAria">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span class="brand-copy">
+          <strong>SVETLAB</strong>
+          <small data-i18n="brandTag">LIGHTING · CHINA → RUSSIA</small>
+        </span>
       </a>
-      <div class="lang" role="group" aria-label="Language switch">
-        <button id="btnRU" class="active" type="button">RU</button>
-        <button id="btnCN" type="button">中文</button>
+
+      <nav class="desktop-nav" aria-label="Основная навигация" data-i18n-aria="navAria">
+        <a href="#products" data-i18n="navProducts">Продукция</a>
+        <a href="#custom" data-i18n="navCustom">Под заказ</a>
+        <a href="#case" data-i18n="navCases">Кейсы</a>
+        <a href="#process" data-i18n="navProcess">Процесс</a>
+        <a href="#about" data-i18n="navAbout">О нас</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Выбор языка" data-i18n-aria="languageAria">
+          <button class="lang-button active" type="button" data-lang="ru" aria-pressed="true">RU</button>
+          <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="header-cta" href="#contact" data-i18n="navCta">Запросить расчёт</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню" data-i18n-aria="menuOpen">
+          <span></span><span></span>
+        </button>
       </div>
-    </header>
+    </div>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-inner">
-          <div class="eyebrow ru">Поставки из Китая</div>
-          <div class="eyebrow cn">中国照明供应</div>
-          <h1 class="ru">Светильники из Китая для российского рынка</h1>
-          <h1 class="cn">面向俄罗斯市场的中国灯具供应</h1>
-          <p class="subtitle ru">Готовые модели, OEM/ODM и индивидуальное производство. Подбор продукции, контроль заказа и координация поставки выполняются компанией Jiaxing Chenyuan.</p>
-          <p class="subtitle cn">提供现成款式、OEM/ODM及定制生产。由嘉兴晨源负责产品选型、订单跟进与出口交付协调。</p>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="shell" aria-label="Мобильная навигация" data-i18n-aria="mobileNavAria">
+        <a href="#products" data-i18n="navProducts">Продукция</a>
+        <a href="#custom" data-i18n="navCustom">Под заказ</a>
+        <a href="#case" data-i18n="navCases">Кейсы</a>
+        <a href="#process" data-i18n="navProcess">Процесс</a>
+        <a href="#about" data-i18n="navAbout">О нас</a>
+        <a href="#contact" data-i18n="navCta">Запросить расчёт</a>
+      </nav>
+    </div>
+  </header>
 
-          <div class="badges">
-            <span class="badge ru">Цены и расчёты в CNY</span><span class="badge cn">报价及结算使用人民币</span>
-            <span class="badge ru">Готовые модели и производство под заказ</span><span class="badge cn">现货款与定制生产</span>
-            <span class="badge ru">Логистика рассчитывается отдельно</span><span class="badge cn">物流费用单独核算</span>
+  <main id="main">
+    <section class="hero section-dark">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Поставки освещения из Китая</p>
+          <h1 data-i18n="heroTitle">Светильники для вашего проекта — от выбора модели до готовой партии.</h1>
+          <p class="hero-lead" data-i18n="heroLead">Подбираем готовые решения, производим нестандартные изделия и объединяем заказы для поставки в Россию. Один контакт в Китае на всём пути.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact"><span data-i18n="heroPrimary">Отправить проект на расчёт</span><b aria-hidden="true">↗</b></a>
+            <a class="button button-ghost dynamic-mail" href="mailto:caif5947@gmail.com?subject=Запрос%20каталога%20SVETLAB" data-href-ru="mailto:caif5947@gmail.com?subject=Запрос%20каталога%20SVETLAB" data-href-en="mailto:caif5947@gmail.com?subject=SVETLAB%20catalog%20request"><span data-i18n="heroSecondary">Запросить каталог</span></a>
           </div>
-
-          <div class="cta">
-            <a class="btn primary ru" href="mailto:caif5947@gmail.com?subject=Запрос%20по%20светильникам">Отправить запрос</a>
-            <a class="btn primary cn" href="mailto:caif5947@gmail.com?subject=灯具询价">发送询价</a>
-            <a class="btn ghost" href="https://t.me/svetlab_support" target="_blank" rel="noopener">Telegram: @svetlab_support</a>
-          </div>
-
-          <div class="trust">
-            <span class="pill ok ru">Прямой контакт с поставщиком</span><span class="pill ok cn">中国供应商直接对接</span>
-            <span class="pill ru">Каталог без цен — предложение по выбранным моделям</span><span class="pill cn">目录不标价，选款后单独报价</span>
-            <span class="pill warm ru">Перевозчик может быть выбран заказчиком</span><span class="pill warm cn">客户可自行选择物流公司</span>
+          <div class="hero-note">
+            <span class="signal" aria-hidden="true"></span>
+            <p data-i18n="heroNote">Работаем с оптовиками, дизайн-студиями, подрядчиками и закупщиками проектов.</p>
           </div>
         </div>
-      </section>
 
-      <div class="section-head">
-        <h2 class="ru">Что мы предлагаем</h2><h2 class="cn">我们提供什么</h2>
-        <p class="ru">От выбора модели до отгрузки</p><p class="cn">从选款到出货</p>
+        <figure class="hero-visual reveal delay-1">
+          <img src="assets/hero-lighting.jpg" alt="Хрустальная люстра в современном интерьере" data-i18n-alt="heroImageAlt" width="750" height="1000" fetchpriority="high">
+          <figcaption>
+            <span data-i18n="heroImageCaption">Готовые модели и производство под заказ</span>
+            <strong>SVETLAB / 2026</strong>
+          </figcaption>
+        </figure>
       </div>
 
-      <section class="grid" aria-label="Services">
-        <article class="card">
-          <div class="card-number">01 / PRODUCTS</div>
-          <h3 class="ru">Ассортимент светильников</h3><h3 class="cn">灯具产品范围</h3>
-          <ul class="list">
-            <li class="ru">Потолочные и подвесные светильники</li><li class="cn">吸顶灯与吊灯</li>
-            <li class="ru">Люстры, бра, настольные и напольные модели</li><li class="cn">水晶灯、壁灯、台灯与落地灯</li>
-            <li class="ru">Вентиляторы-светильники, линейные и проектные решения</li><li class="cn">风扇灯、线性灯与工程照明</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="card-number">02 / CUSTOM</div>
-          <h3 class="ru">OEM, ODM и кастомизация</h3><h3 class="cn">OEM、ODM与定制</h3>
-          <ul class="list">
-            <li class="ru">Размер, цвет, источник света и упаковка</li><li class="cn">尺寸、颜色、光源与包装定制</li>
-            <li class="ru">Производство по образцу или техническому заданию</li><li class="cn">支持来样或按需求生产</li>
-            <li class="ru">Согласование спецификации перед запуском</li><li class="cn">投产前确认规格明细</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="card-number">03 / DELIVERY</div>
-          <h3 class="ru">Заказ и логистика</h3><h3 class="cn">订单与物流</h3>
-          <ul class="list">
-            <li class="ru">Предложение и расчёты в китайских юанях</li><li class="cn">使用人民币报价和结算</li>
-            <li class="ru">Срок производства подтверждается по спецификации</li><li class="cn">生产周期按确认规格执行</li>
-            <li class="ru">Доставка оплачивается по фактическому тарифу перевозчика</li><li class="cn">物流按承运商实际报价核算</li>
-          </ul>
-        </article>
-      </section>
+      <div class="shell audience-bar reveal">
+        <p data-i18n="audienceLabel">Для кого мы работаем</p>
+        <ul>
+          <li data-i18n="audience1">Оптовики</li>
+          <li data-i18n="audience2">Дизайн-студии</li>
+          <li data-i18n="audience3">Комплектаторы</li>
+          <li data-i18n="audience4">Строительные компании</li>
+        </ul>
+      </div>
+    </section>
 
-      <div class="section-head">
-        <h2 class="ru">Компания и контакты</h2><h2 class="cn">公司与联系方式</h2>
-        <p class="ru">Ответим и подготовим предложение</p><p class="cn">快速响应并准备报价</p>
+    <section class="capabilities section-paper" id="capabilities">
+      <div class="shell section-intro reveal">
+        <p class="eyebrow dark" data-i18n="capEyebrow">Один партнёр в Китае</p>
+        <div>
+          <h2 data-i18n="capTitle">Не просто найти светильник. Собрать поставку, которая соответствует задаче.</h2>
+          <p data-i18n="capLead">Берём на себя поиск, сверку параметров, производство, контроль и подготовку общей партии.</p>
+        </div>
       </div>
 
-      <section id="contact" class="info" aria-label="Contacts">
-        <article class="card">
-          <h3 class="ru">О компании</h3><h3 class="cn">公司信息</h3>
-          <div class="kv">
-            <div class="label ru">Бренд</div><div class="label cn">品牌</div><div>SVETLAB</div>
-            <div class="label ru">Поставки и экспорт</div><div class="label cn">供应与出口</div><div>Jiaxing Chenyuan Import &amp; Export Co., Ltd.</div>
-            <div class="label ru">Контактное лицо</div><div class="label cn">联系人</div><div>Cai Fei</div>
-            <div class="label ru">Рынок</div><div class="label cn">目标市场</div><div class="ru">Россия и страны СНГ</div><div class="cn">俄罗斯及独联体市场</div>
-          </div>
-          <p class="note ru">SVETLAB — бренд освещения для российского рынка. Jiaxing Chenyuan отвечает за подбор продукции, производство, экспорт и сопровождение заказа. Юридические и платёжные реквизиты предоставляются в договоре и счёте.</p>
-          <p class="note cn">SVETLAB为面向俄罗斯市场的照明品牌，嘉兴晨源负责产品选型、生产、出口与订单执行。合同及付款主体以正式合同和账单为准。</p>
+      <div class="shell capability-grid">
+        <article class="capability-card reveal">
+          <span>01</span>
+          <h3 data-i18n="cap1Title">Подбор и комплектация</h3>
+          <p data-i18n="cap1Text">По фото, ссылке, спецификации или дизайн-проекту. Сравниваем варианты и фиксируем параметры.</p>
         </article>
-        <article class="card">
-          <h3 class="ru">Связаться с нами</h3><h3 class="cn">联系我们</h3>
-          <div class="kv">
-            <div class="label">E-mail</div><div><a class="contact-link" href="mailto:caif5947@gmail.com">caif5947@gmail.com</a></div>
-            <div class="label">Telegram</div><div><a class="contact-link" href="https://t.me/svetlab_support" target="_blank" rel="noopener">@svetlab_support</a></div>
-            <div class="label">WhatsApp</div><div><a class="contact-link" href="https://wa.me/8619951722424" target="_blank" rel="noopener">+86 199 5172 2424</a></div>
-            <div class="label">MAX</div><div>+7 924 348-91-00</div>
-            <div class="label ru">Время работы</div><div class="label cn">工作时间</div><div>Пн–Пт / 周一至周五, 9:30–18:00 (GMT+8)</div>
+        <article class="capability-card reveal delay-1">
+          <span>02</span>
+          <h3 data-i18n="cap2Title">Серийные поставки</h3>
+          <p data-i18n="cap2Text">Каталожные модели, оптовые партии и повторные заказы с согласованной комплектацией.</p>
+        </article>
+        <article class="capability-card reveal delay-2">
+          <span>03</span>
+          <h3 data-i18n="cap3Title">OEM / ODM и нестандарт</h3>
+          <p data-i18n="cap3Text">Размер, конструкция, мощность, цвет света, отделка, управление и упаковка под задачу.</p>
+        </article>
+        <article class="capability-card reveal delay-3">
+          <span>04</span>
+          <h3 data-i18n="cap4Title">Контроль и консолидация</h3>
+          <p data-i18n="cap4Text">Проверяем товар и упаковку, собираем позиции разных поставщиков в одну партию.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products section-light" id="products">
+      <div class="shell section-heading reveal">
+        <div>
+          <p class="eyebrow dark" data-i18n="productsEyebrow">Ассортимент</p>
+          <h2 data-i18n="productsTitle">От декоративного света до технической системы.</h2>
+        </div>
+        <p data-i18n="productsLead">Покажите нужный стиль или параметры — предложим модели из текущих каталогов и варианты производства.</p>
+      </div>
+
+      <div class="shell product-grid">
+        <article class="product-card product-tall reveal">
+          <img src="assets/category-decorative.jpg" alt="Кольцевая хрустальная люстра" data-i18n-alt="product1Alt" width="800" height="800" loading="lazy">
+          <div class="product-overlay">
+            <p>01 / DECORATIVE</p>
+            <h3 data-i18n="product1Title">Люстры и подвесной свет</h3>
+            <span data-i18n="product1Meta">Готовые модели · размеры под заказ</span>
           </div>
         </article>
-      </section>
-    </main>
 
-    <footer>© <span id="year"></span> SVETLAB · Jiaxing Chenyuan Import &amp; Export Co., Ltd.</footer>
-  </div>
+        <article class="product-card reveal delay-1">
+          <img src="assets/category-technical.jpg" alt="Трековая система в интерьере" data-i18n-alt="product2Alt" width="1280" height="775" loading="lazy">
+          <div class="product-overlay">
+            <p>02 / TECHNICAL</p>
+            <h3 data-i18n="product2Title">Трековое и линейное освещение</h3>
+            <span data-i18n="product2Meta">Проекты · магазины · коммерческие пространства</span>
+          </div>
+        </article>
 
-<script>
-  const root=document.body;
-  const btnCN=document.getElementById('btnCN');
-  const btnRU=document.getElementById('btnRU');
-  function setLang(lang){
-    root.setAttribute('data-lang',lang);
-    document.documentElement.lang=lang==='ru'?'ru':'zh-CN';
-    btnRU.classList.toggle('active',lang==='ru');
-    btnCN.classList.toggle('active',lang==='cn');
-  }
-  btnRU.addEventListener('click',()=>setLang('ru'));
-  btnCN.addEventListener('click',()=>setLang('cn'));
-  document.getElementById('year').textContent=new Date().getFullYear();
-</script>
+        <article class="product-card reveal delay-2">
+          <img src="assets/category-ambient.jpg" alt="Современные настольные светильники" data-i18n-alt="product3Alt" width="800" height="800" loading="lazy">
+          <div class="product-overlay">
+            <p>03 / AMBIENT</p>
+            <h3 data-i18n="product3Title">Настенный, настольный и напольный свет</h3>
+            <span data-i18n="product3Meta">Жилые и общественные интерьеры</span>
+          </div>
+        </article>
+
+        <article class="product-card product-wide reveal delay-1">
+          <img src="assets/category-custom.jpg" alt="Изготовление нестандартной хрустальной люстры" data-i18n-alt="product4Alt" width="1200" height="900" loading="lazy">
+          <div class="product-overlay">
+            <p>04 / BESPOKE</p>
+            <h3 data-i18n="product4Title">Проектные и крупноформатные изделия</h3>
+            <span data-i18n="product4Meta">По визуализации, чертежу или референсу</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="custom section-dark" id="custom">
+      <div class="shell custom-grid">
+        <div class="custom-media reveal">
+          <img src="assets/production.jpg" alt="Производственное оборудование на фабрике" data-i18n-alt="customImageAlt" width="929" height="1200" loading="lazy">
+          <div class="media-label">
+            <span data-i18n="customMediaLabel">Производство в Китае</span>
+            <strong>OEM / ODM</strong>
+          </div>
+        </div>
+
+        <div class="custom-copy reveal delay-1">
+          <p class="eyebrow" data-i18n="customEyebrow">Производство под заказ</p>
+          <h2 data-i18n="customTitle">Когда каталожной модели недостаточно.</h2>
+          <p class="section-lead" data-i18n="customLead">Переводим идею в согласованную спецификацию: от размера и конструкции до мощности, управления и упаковки.</p>
+
+          <ol class="spec-list">
+            <li><span>01</span><div><strong data-i18n="custom1Title">Исходные данные</strong><p data-i18n="custom1Text">Фото, эскиз, план, размеры или техническое задание.</p></div></li>
+            <li><span>02</span><div><strong data-i18n="custom2Title">Инженерная сверка</strong><p data-i18n="custom2Text">Конструкция, материалы, источник света, мощность и монтаж.</p></div></li>
+            <li><span>03</span><div><strong data-i18n="custom3Title">Подтверждение до запуска</strong><p data-i18n="custom3Text">Чертёж, образец или контрольный фото/видео-этап — по проекту.</p></div></li>
+            <li><span>04</span><div><strong data-i18n="custom4Title">Серия и упаковка</strong><p data-i18n="custom4Text">Производство партии, проверка и защита под выбранную логистику.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="logistics section-paper" id="logistics">
+      <div class="shell logistics-grid">
+        <div class="logistics-copy reveal">
+          <p class="eyebrow dark" data-i18n="logisticsEyebrow">Снабжение и логистика</p>
+          <h2 data-i18n="logisticsTitle">Несколько поставщиков. Одна управляемая партия.</h2>
+          <p class="section-lead dark-lead" data-i18n="logisticsLead">Сводим готовые товары и изделия под заказ, проверяем упаковку и готовим единую отгрузку.</p>
+
+          <div class="logistics-points">
+            <div><span>01</span><p data-i18n="logistics1">Сверка готовности у каждого поставщика</p></div>
+            <div><span>02</span><p data-i18n="logistics2">Проверка комплектности и внешнего вида</p></div>
+            <div><span>03</span><p data-i18n="logistics3">Усиление упаковки при необходимости</p></div>
+            <div><span>04</span><p data-i18n="logistics4">Передача выбранному перевозчику</p></div>
+          </div>
+
+          <p class="commercial-note" data-i18n="logisticsNote">Товар рассчитывается в CNY. Логистика и схема импорта согласуются отдельно под маршрут и состав партии.</p>
+        </div>
+
+        <figure class="warehouse-figure reveal delay-1">
+          <img src="assets/warehouse.jpg" alt="Упакованные светильники на складе перед отгрузкой" data-i18n-alt="warehouseAlt" width="1200" height="900" loading="lazy">
+          <figcaption>
+            <span data-i18n="warehouseCaption">Консолидация и подготовка к отгрузке</span>
+            <b>CN → RU</b>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-study section-light" id="case">
+      <div class="shell case-heading reveal">
+        <div>
+          <p class="eyebrow dark" data-i18n="caseEyebrow">Реальный заказ · 2026</p>
+          <h2 data-i18n="caseTitle">Один заказ. Три системы. Единая спецификация.</h2>
+        </div>
+        <p data-i18n="caseLead">Готовые светильники, трековая система и крупноформатный световой профиль по размерам заказчика.</p>
+      </div>
+
+      <div class="shell case-layout">
+        <div class="case-facts reveal">
+          <article>
+            <span>40</span>
+            <div><strong data-i18n="caseFact1Title">светильников</strong><p data-i18n="caseFact1Text">30 рамочных, 2 кольцевых Ø1500 и 8 шестиугольных.</p></div>
+          </article>
+          <article>
+            <span>4.1 × 4.1 m</span>
+            <div><strong data-i18n="caseFact2Title">световой профиль</strong><p data-i18n="caseFact2Text">Сталь, сечение 100 × 100 мм, 4000K, 576 Вт.</p></div>
+          </article>
+          <article>
+            <span>86 + 34 m</span>
+            <div><strong data-i18n="caseFact3Title">трековая система</strong><p data-i18n="caseFact3Text">86 светильников, 34 м шинопровода и соединители.</p></div>
+          </article>
+          <article class="case-total">
+            <span>12 500 CNY</span>
+            <div><strong data-i18n="caseFact4Title">товарная стоимость</strong><p data-i18n="caseFact4Text">Логистика рассчитывается отдельно.</p></div>
+          </article>
+        </div>
+
+        <div class="case-gallery">
+          <figure class="case-image case-image-large reveal delay-1">
+            <img src="assets/case-drawing.jpg" alt="Рабочий чертёж светового профиля 4100 на 4100 мм" data-i18n-alt="caseDrawingAlt" width="1023" height="668" loading="lazy">
+            <figcaption><span>01</span><p data-i18n="caseDrawingCaption">Рабочий чертёж после согласования параметров</p></figcaption>
+          </figure>
+          <figure class="case-image reveal delay-2">
+            <img src="assets/case-light-test.jpg" alt="Проверка свечения секции профиля" data-i18n-alt="caseTestAlt" width="633" height="720" loading="lazy">
+            <figcaption><span>02</span><p data-i18n="caseTestCaption">Проверка секции и света</p></figcaption>
+          </figure>
+          <figure class="case-image reveal delay-3">
+            <img src="assets/case-loading.jpg" alt="Упакованные секции светового профиля в машине" data-i18n-alt="caseLoadingAlt" width="720" height="1280" loading="lazy">
+            <figcaption><span>03</span><p data-i18n="caseLoadingCaption">Упаковка и подготовка к передаче перевозчику</p></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="shell status-note reveal">
+        <span data-i18n="caseStatusLabel">Статус кейса</span>
+        <p data-i18n="caseStatusText">Предоплата получена, производство, проверка и упаковка выполнены. Получение и монтаж заказчиком ещё не подтверждены.</p>
+      </div>
+    </section>
+
+    <section class="process section-dark" id="process">
+      <div class="shell section-heading on-dark reveal">
+        <div>
+          <p class="eyebrow" data-i18n="processEyebrow">Как мы работаем</p>
+          <h2 data-i18n="processTitle">От запроса до отгрузки — пять понятных этапов.</h2>
+        </div>
+        <p data-i18n="processLead">На каждом этапе фиксируем решения и сообщаем, что требуется для следующего шага.</p>
+      </div>
+
+      <ol class="shell process-line">
+        <li class="reveal"><span>01</span><strong data-i18n="process1Title">Запрос</strong><p data-i18n="process1Text">Фото, ссылка, план, спецификация, количество и город.</p></li>
+        <li class="reveal delay-1"><span>02</span><strong data-i18n="process2Title">Подбор</strong><p data-i18n="process2Text">Модели, фабрика, параметры и варианты исполнения.</p></li>
+        <li class="reveal delay-2"><span>03</span><strong data-i18n="process3Title">Расчёт</strong><p data-i18n="process3Text">Товарная цена в CNY, сроки и отдельно логистика.</p></li>
+        <li class="reveal delay-3"><span>04</span><strong data-i18n="process4Title">Исполнение</strong><p data-i18n="process4Text">Заказ, производство, контроль и фото/видео.</p></li>
+        <li class="reveal delay-3"><span>05</span><strong data-i18n="process5Title">Отгрузка</strong><p data-i18n="process5Text">Упаковка, консолидация и передача перевозчику.</p></li>
+      </ol>
+    </section>
+
+    <section class="brand-architecture section-paper" id="about">
+      <div class="shell brand-grid">
+        <div class="brand-intro reveal">
+          <p class="eyebrow dark" data-i18n="brandEyebrow">Кто стоит за поставкой</p>
+          <h2 data-i18n="brandTitle">Три роли. Одна понятная цепочка ответственности.</h2>
+          <p data-i18n="brandLead">Мы показываем отношения между брендом, операционной командой и китайским торговым субъектом без смешения названий.</p>
+        </div>
+
+        <div class="brand-stack">
+          <article class="brand-layer layer-primary reveal">
+            <span>01 / MARKET BRAND</span>
+            <h3>SVETLAB</h3>
+            <p data-i18n="brand1Text">Бренд освещения и коммерческая работа на российском рынке.</p>
+          </article>
+          <article class="brand-layer reveal delay-1">
+            <span>02 / SUPPLY & EXPORT</span>
+            <h3>Jiaxing Chenyuan</h3>
+            <p data-i18n="brand2Text">Подбор продукции, работа с фабриками, контроль, консолидация и экспортное сопровождение.</p>
+          </article>
+          <article class="brand-layer reveal delay-2">
+            <span>03 / CHINA TRADE ENTITY</span>
+            <h3>Hangzhou Shangchengchuang<br>Trading Co., Ltd.</h3>
+            <p data-i18n="brand3Text">Китайский торговый субъект и владелец домена. Юридические и платёжные реквизиты фиксируются в договоре и счёте.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-dark" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Начать запрос</p>
+          <h2 data-i18n="contactTitle">Пришлите проект, фото или ссылку. Мы ответим с конкретным следующим шагом.</h2>
+          <p data-i18n="contactLead">Чтобы быстрее подготовить подбор и расчёт, укажите тип товара, количество, город получения и желаемый срок.</p>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://t.me/svetlab_support" target="_blank" rel="noopener"><span>Telegram</span><b aria-hidden="true">↗</b></a>
+            <a class="button button-outline" href="https://wa.me/8619951722424" target="_blank" rel="noopener"><span>WhatsApp</span><b aria-hidden="true">↗</b></a>
+            <a class="button button-text dynamic-mail" href="mailto:caif5947@gmail.com?subject=Запрос%20по%20светильникам%20SVETLAB" data-href-ru="mailto:caif5947@gmail.com?subject=Запрос%20по%20светильникам%20SVETLAB" data-href-en="mailto:caif5947@gmail.com?subject=SVETLAB%20lighting%20inquiry"><span data-i18n="contactEmailCta">Написать на e-mail</span><b aria-hidden="true">↗</b></a>
+          </div>
+        </div>
+
+        <aside class="contact-card reveal delay-1" aria-label="Контактные данные" data-i18n-aria="contactCardAria">
+          <div class="contact-person">
+            <span>CONTACT</span>
+            <h3>Cai Fei</h3>
+            <p>Jiaxing Chenyuan · SVETLAB</p>
+          </div>
+          <dl>
+            <div><dt>E-mail</dt><dd><a href="mailto:caif5947@gmail.com">caif5947@gmail.com</a></dd></div>
+            <div><dt>Telegram</dt><dd><a href="https://t.me/svetlab_support" target="_blank" rel="noopener">@svetlab_support</a></dd></div>
+            <div><dt>WhatsApp / CN</dt><dd><a href="https://wa.me/8619951722424" target="_blank" rel="noopener">+86 199 5172 2424</a></dd></div>
+            <div><dt>MAX / RU</dt><dd>+7 924 348-91-00</dd></div>
+            <div><dt data-i18n="hoursLabel">Время работы</dt><dd data-i18n="hoursValue">Пн–Пт · 9:30–18:00 (GMT+8)</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <strong>SVETLAB</strong>
+        <span data-i18n="footerBrand">Lighting for the Russian market</span>
+      </div>
+      <p data-i18n="footerEntity">Hangzhou Shangchengchuang Trading Co., Ltd. · China</p>
+      <p>© <span id="year"></span> <span data-i18n="footerRights">Все права защищены.</span></p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">Для переключения языка и мобильного меню требуется JavaScript. Все контакты доступны внизу страницы.</div>
+  </noscript>
+  <script src="script.js" defer></script>
 </body>
 </html>
