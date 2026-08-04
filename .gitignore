@@ -1,0 +1,4 @@
+source-assets/
+output/
+.DS_Store
+lighthouse-*.json
