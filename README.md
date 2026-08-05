@@ -1,10 +1,14 @@
 # SVETLAB company site
 
-Russian-language B2B landing page for project lighting selection, quotation, custom production, inspection and consolidation in China.
+Russian-language B2B landing page for lighting selection, custom production coordination and project consolidation in China.
 
-## Stack
+## Technology
 
-Static HTML, CSS and JavaScript. No backend and no simulated file upload. Project files are sent through Telegram, WhatsApp or e-mail.
+- Static HTML, CSS and JavaScript; no framework and no build step.
+- Self-hosted Onest variable font with Cyrillic and Latin subsets.
+- Responsive WebP images with explicit dimensions and lazy loading below the fold.
+- No backend, SMTP credentials, direct file upload or third-party analytics script.
+- Project files are sent through Telegram, WhatsApp, MAX or e-mail.
 
 ## Local preview
 
@@ -12,12 +16,17 @@ Static HTML, CSS and JavaScript. No backend and no simulated file upload. Projec
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080`.
+Then open `http://localhost:8080/`.
+
+## Configuration
+
+Confirmed contact details and the legal entity are defined once in `config.js`.
 
 ## Deployment
 
-GitHub Pages publishes the repository root and keeps the existing `CNAME` for `shangchengchuang.com`.
+The site is published through GitHub Pages and keeps the existing `CNAME` for `shangchengchuang.com`.
 
-## Contact configuration
-
-Confirmed contact channels and optional analytics IDs are defined once in `config.js`.
+```bash
+git push -u origin fix/svetlab-one-final-taskbook
+git push origin HEAD:main
+```
