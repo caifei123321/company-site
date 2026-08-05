@@ -11,6 +11,7 @@
   const modalPanel = modal?.querySelector(".modal-panel");
   const requestForm = document.getElementById("request-form");
   const taskField = requestForm?.querySelector('[name="task"]');
+  const quantityField = requestForm?.querySelector('[name="quantity"]');
   const cityField = requestForm?.querySelector('[name="city"]');
   const menuButton = document.querySelector(".menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -62,16 +63,18 @@
   function getMessageValues() {
     return {
       task: String(taskField?.value || "").trim(),
+      quantity: String(quantityField?.value || "").trim(),
       city: String(cityField?.value || "").trim()
     };
   }
 
   function buildMessage() {
-    const { task, city } = getMessageValues();
+    const { task, quantity, city } = getMessageValues();
     return [
-      "Здравствуйте! Хочу получить расчёт по проекту.",
+      "Здравствуйте! Хочу получить расчёт для проекта.",
       "",
-      `Задача: ${task || "уточню в сообщении"}`,
+      `Нужно подобрать: ${task || "уточню в сообщении"}`,
+      `Количество: ${quantity || "уточню позже"}`,
       `Город получения: ${city || "уточню позже"}`,
       "",
       "Материалы отправлю следующим сообщением."
@@ -79,12 +82,12 @@
   }
 
   function buildEmailBody() {
-    const { task, city } = getMessageValues();
+    const { task, quantity, city } = getMessageValues();
     return [
-      "Здравствуйте! Хочу получить расчёт по проекту.",
+      "Здравствуйте! Хочу получить расчёт для проекта.",
       "",
-      `Задача: ${task}`,
-      "Количество:",
+      `Нужно подобрать: ${task}`,
+      `Количество: ${quantity}`,
       `Город получения: ${city}`,
       "",
       "Материалы приложу к письму."
@@ -210,7 +213,7 @@
     control.addEventListener("click", closeModal);
   });
 
-  [taskField, cityField].forEach((field) => field?.addEventListener("input", updateChannelLinks));
+  [taskField, quantityField, cityField].forEach((field) => field?.addEventListener("input", updateChannelLinks));
 
   document.addEventListener("click", (event) => {
     const channelControl = event.target.closest("[data-channel]");

@@ -1,7 +1,7 @@
 window.SVETLAB_CONFIG = Object.freeze({
   contacts: Object.freeze({
     name: "Cai Fei / Цай Фэй",
-    role: "Руководитель проектов в Китае",
+    role: "Руководитель проектов",
     telegramUsername: "svetlab_support01",
     telegramUrl: "https://t.me/svetlab_support01",
     whatsappPhone: "8619951722424",
@@ -15,8 +15,8 @@ window.SVETLAB_CONFIG = Object.freeze({
     legalName: "Jiaxing Chenyuan Import & Export Co., Ltd.",
     legalNameZh: "嘉兴辰远进出口有限公司",
     websiteUrl: "https://shangchengchuang.com/",
-    businessHours: "Пн–Пт, 09:30–18:00 по времени Китая (UTC+8)",
-    requestEmailSubject: "Запрос на расчёт проекта — SVETLAB"
+    businessHours: "Пн–Пт, 09:30–18:00 (UTC+8, время Китая)",
+    requestEmailSubject: "Расчёт по проекту — SVETLAB"
   }),
   analytics: Object.freeze({
     yandexMetricaId: "",
