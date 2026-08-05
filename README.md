@@ -20,7 +20,7 @@ Then open `http://localhost:8080/`.
 
 ## Configuration
 
-Confirmed contact details and the legal entity are defined once in `config.js`.
+`config.js` is the runtime source of truth for contact links and generated messages. Static HTML keeps explicit no-JavaScript fallbacks for crawlability and resilient direct contact.
 
 ## Deployment
 

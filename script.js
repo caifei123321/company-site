@@ -174,10 +174,15 @@
     link.addEventListener("click", () => closeMenu({ restoreFocus: false }));
   });
 
+  mobileMenu?.addEventListener("click", (event) => {
+    if (event.target === mobileMenu) closeMenu();
+  });
+
   function openModal(trigger) {
     if (!modal || !modalPanel) return;
+    const restoreTarget = trigger && mobileMenu?.contains(trigger) ? menuButton : (trigger || document.activeElement);
     closeMenu({ restoreFocus: false });
-    lastModalTrigger = trigger || document.activeElement;
+    lastModalTrigger = restoreTarget;
     modal.hidden = false;
     document.body.classList.add("modal-open");
     updateChannelLinks();
@@ -238,6 +243,8 @@
     button.addEventListener("click", () => {
       const expanded = button.getAttribute("aria-expanded") === "true";
       button.setAttribute("aria-expanded", String(!expanded));
+      const answer = document.getElementById(button.getAttribute("aria-controls"));
+      answer?.setAttribute("aria-hidden", String(expanded));
       if (!expanded) trackEvent("faq_open", { placement: button.textContent.trim() });
     });
   });

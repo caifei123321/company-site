@@ -8,12 +8,13 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#202321">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
   <link rel="canonical" href="https://shangchengchuang.com/">
   <link rel="icon" href="favicon.jpg" type="image/jpeg">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/onest-cyrillic-400-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=one-final-20260805">
+  <link rel="preload" href="assets/hero-project-lighting-1200.webp" as="image" type="image/webp" imagesrcset="assets/hero-project-lighting-768.webp 768w, assets/hero-project-lighting-1200.webp 1200w, assets/hero-project-lighting.webp 1535w" imagesizes="(max-width: 960px) 100vw, 58vw" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=taskbook-r2-20260805">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
@@ -76,17 +77,18 @@
       </div>
     </div>
 
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <nav class="shell" aria-label="Мобильная навигация">
-        <a href="#services">Услуги</a>
-        <a href="#products">Продукция</a>
-        <a href="#process">Как работаем</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Контакты</a>
-        <a class="button button-primary" href="#contact" data-open-modal data-placement="mobile_menu">Получить расчёт</a>
-      </nav>
-    </div>
   </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="shell" aria-label="Мобильная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#products">Продукция</a>
+      <a href="#process">Как работаем</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Контакты</a>
+      <a class="button button-primary" href="#contact" data-open-modal data-placement="mobile_menu">Получить расчёт</a>
+    </nav>
+  </div>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
@@ -168,12 +170,12 @@
       <div class="shell faq-layout">
         <div class="faq-heading"><p class="eyebrow dark">FAQ</p><h2 id="faq-title">Перед отправкой проекта</h2><p>Короткие ответы на вопросы, которые обычно возникают до первого сообщения.</p></div>
         <div class="faq-list">
-          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-1">Что можно прислать для расчёта?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-1"><div><p>PDF, план освещения, спецификацию, таблицу, визуализации, фотографии или ссылки. Если информации недостаточно, мы отправим короткий список уточнений.</p></div></div></article>
-          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-2">Вы можете подобрать аналоги указанных брендов?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-2"><div><p>Да. Сначала сверяем внешний вид и ключевые параметры, затем предлагаем точную модель или сопоставимые варианты с указанием отличий.</p></div></div></article>
-          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-3">В каком виде приходит расчёт?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-3"><div><p>В виде таблицы с наименованием, изображением или ссылкой, количеством, основными параметрами, ценой за единицу, суммой в CNY, сроком и примечаниями.</p></div></div></article>
-          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-4">Можно ли изготовить изделие по размерам или чертежу?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-4"><div><p>Да, если конструкцию возможно произвести и согласовать с фабрикой. До запуска фиксируются размеры, материалы, световые параметры, крепление и упаковка.</p></div></div></article>
-          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-5">Можно ли объединить товары нескольких фабрик?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-5"><div><p>Да. Мы сверяем готовность, количество и упаковку, после чего подготавливаем общую партию для передачи перевозчику.</p></div></div></article>
-          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-6">Входит ли логистика в цену товара?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-6"><div><p>Нет. Товар рассчитывается в CNY. Упаковка, логистика, документы и импортная схема согласуются отдельно.</p></div></div></article>
+          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-1">Что можно прислать для расчёта?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-1" aria-hidden="true"><div><p>PDF, план освещения, спецификацию, таблицу, визуализации, фотографии или ссылки. Если информации недостаточно, мы отправим короткий список уточнений.</p></div></div></article>
+          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-2">Вы можете подобрать аналоги указанных брендов?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-2" aria-hidden="true"><div><p>Да. Сначала сверяем внешний вид и ключевые параметры, затем предлагаем точную модель или сопоставимые варианты с указанием отличий.</p></div></div></article>
+          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-3">В каком виде приходит расчёт?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-3" aria-hidden="true"><div><p>В виде таблицы с наименованием, изображением или ссылкой, количеством, основными параметрами, ценой за единицу, суммой в CNY, сроком и примечаниями.</p></div></div></article>
+          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-4">Можно ли изготовить изделие по размерам или чертежу?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-4" aria-hidden="true"><div><p>Да, если конструкцию возможно произвести и согласовать с фабрикой. До запуска фиксируются размеры, материалы, световые параметры, крепление и упаковка.</p></div></div></article>
+          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-5">Можно ли объединить товары нескольких фабрик?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-5" aria-hidden="true"><div><p>Да. Мы сверяем готовность, количество и упаковку, после чего подготавливаем общую партию для передачи перевозчику.</p></div></div></article>
+          <article><h3><button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-6">Входит ли логистика в цену товара?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="faq-6" aria-hidden="true"><div><p>Нет. Товар рассчитывается в CNY. Упаковка, логистика, документы и импортная схема согласуются отдельно.</p></div></div></article>
         </div>
       </div>
     </section>
@@ -199,7 +201,7 @@
     <div class="shell footer-main">
       <div><a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span class="brand-copy"><strong>SVETLAB</strong><small>ОСВЕЩЕНИЕ · КИТАЙ</small></span></a><p>Освещение, производство и комплектация проектов в Китае</p></div>
       <div><p>Услуги предоставляет:</p><strong>Jiaxing Chenyuan Import &amp; Export Co., Ltd. · China</strong><p class="business-hours">Пн–Пт, 09:30–18:00 по времени Китая (UTC+8)</p></div>
-      <nav aria-label="Контакты и правовая информация"><a href="https://t.me/svetlab_support01" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://wa.me/8619951722424" target="_blank" rel="noopener noreferrer">WhatsApp</a><button type="button" data-channel="max" data-placement="footer">MAX</button><a href="mailto:cai.fei@shangchengchuang.com">E-mail</a><a href="privacy/">Конфиденциальность</a></nav>
+      <nav aria-label="Контакты и правовая информация"><a href="https://t.me/svetlab_support01" target="_blank" rel="noopener noreferrer" data-channel="telegram" data-placement="footer">Telegram</a><a href="https://wa.me/8619951722424" target="_blank" rel="noopener noreferrer" data-channel="whatsapp" data-placement="footer">WhatsApp</a><button type="button" data-channel="max" data-placement="footer">MAX</button><a href="mailto:cai.fei@shangchengchuang.com" data-channel="email" data-placement="footer">E-mail</a><a href="privacy/">Конфиденциальность</a></nav>
     </div>
     <div class="shell footer-bottom"><span>© <span id="year">2026</span> SVETLAB</span><span>Подбор · производство · консолидация</span></div>
   </footer>
@@ -235,7 +237,7 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="config.js?v=one-final-20260805" defer></script>
-  <script src="script.js?v=one-final-20260805" defer></script>
+  <script src="config.js?v=taskbook-r2-20260805" defer></script>
+  <script src="script.js?v=taskbook-r2-20260805" defer></script>
 </body>
 </html>

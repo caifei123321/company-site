@@ -252,6 +252,18 @@ li {
   transform: translateY(-0.125rem);
 }
 
+.button:active {
+  transform: translateY(0);
+}
+
+.button[aria-disabled="true"],
+button.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
 .button-primary {
   color: #161713;
   background: var(--color-accent);
@@ -428,6 +440,7 @@ li {
   z-index: 99;
   inset: var(--header-h) 0 0;
   overflow-y: auto;
+  color: var(--color-light);
   background: rgba(32, 35, 33, 0.99);
 }
 
@@ -897,7 +910,7 @@ li {
   line-height: 1.65;
 }
 
-.faq-button[aria-expanded="true"] + .faq-answer {
+.faq-answer[aria-hidden="false"] {
   grid-template-rows: 1fr;
 }
 
@@ -1204,6 +1217,13 @@ li {
   background: #fff;
   border-color: rgba(119, 86, 44, 0.55);
   transform: translateY(-0.125rem);
+}
+
+.channel-list a:active,
+.channel-list button:active,
+.modal-channels a:active,
+.modal-channels button:active {
+  transform: translateY(0);
 }
 
 .modal-channels span {
